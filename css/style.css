@@ -202,7 +202,9 @@ td,th{
     background-size: cover;
 }
 
-.banner{display: block;}
+.banner{
+    display: block;
+}
 
 .nav-lien{
     text-decoration: none;
@@ -218,6 +220,7 @@ td,th{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 /* 
@@ -245,12 +248,20 @@ td,th{
     justify-content: center;
     align-items: center;
     margin: 0;
+    margin-top: 30px;
+    border-radius:10px;
     width: 400px;
     height: 250px;
+}
 
+.modal-title{
+    text-align: center;
+    margin-top: 20px;
 }
 
 .text-modal{
+    display: flex;
+    margin-top: 30px;
     width: 600px;
     text-align: center;
 }
@@ -264,6 +275,37 @@ td,th{
     display: block;
 }
 
+.modal-close{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #1C2A46;
+    border: 1px solid #8B1E1E;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    color: #D4B271;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    background-color: #D4B271;
+    color:#8B1E1E;
+    box-shadow: #1C2A46 0 5px 5px;
+}
+
+.modal-body{
+    display: block;
+    margin: 30px;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
 
 .bloc-footer{
     display: flex;
