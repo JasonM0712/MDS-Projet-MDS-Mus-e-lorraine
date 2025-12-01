@@ -9,6 +9,8 @@ function closeModal(){
 
 }
 
+// let Regex= [a-zA-Z0-9-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$;
+
     
             
 
