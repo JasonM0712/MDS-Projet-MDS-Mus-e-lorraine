@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,34 +7,35 @@
     <title>Musée de Lorraine Contact</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav>
         <ul class="navBarre">
             <img src="img/01b91b4e-5327-492d-b894-1eabd02f3e9c.png" alt="logo">
             <div class="nav-button">
-                <li><a href="index.html" class="nav-lien">Acceuil</a></li>
+                <li><a href="index.html" class="nav-lien">Accueil</a></li>
                 <li><a href="index-Contact.html" class="nav-lien">Contact</a></li>
             </div>
         </ul>
-    </nav>  
+    </nav>
     <section>
+        <h1 class="contact-title">Formulaire de Contact</h1>
+        <div class="bloc-form">
+            <form class="sous-bloc-form" action="index.php">
+                <input type="text" placeholder="Prénom">
+                <br>
 
-            <h1 class="contact-title">Formulaire de Contact</h1>
-            <div class="bloc-form">
-                <form class="sous-bloc-form"action="index.php">
-                    <input type="text" placeholder="Prénom">
-                    <br>
+                <input type="text" placeholder="nom">
+                <br>
+                <input type="text" placeholder="Email">
+                <br>
+                <textarea class="text-form" name="" id="" placeholder="Message à envoyer"
+                    class="contact-textarea"></textarea>
+                <br>
+                <button class="form-button" type="submit" onclick="alert('Formulaire envoyer')">Envoyer</button>
+            </form>
+        </div>
 
-                    <input type="text" placeholder="nom">
-                    <br>
-                    <input type="text" placeholder="Email">
-                    <br>
-                    <textarea class="text-form" name="" id="" placeholder="Message à envoyer" class="contact-textarea"></textarea>
-                    <br>
-                    <button class="form-button" type="submit">Envoyer</button>
-                </form>
-            </div>
- 
     </section>
 
     <footer class="bloc-footer">
