@@ -11,7 +11,37 @@ function closeModal(){
 
 }
 
-// let Regex= [a-zA-Z0-9-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$;
+let form = document.querySelector('#contactForm');
+
+form.email.addEventListener('change', function(){
+    emailValid(this)
+});
+
+function emailValid(inputEmail){
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$/;
+        let testEmail = emailRegex.test(inputEmail.value);
+        let small = inputEmail.nextElementSibling;
+// ^ nextElementSibling sert à attraper la balise qui est juste après
+
+
+            if(testEmail){
+                small.innerHTML = 'Adresse Valide';
+                small.classList.remove('emailFailed')
+                small.classList.add('emailSuccess')
+            } 
+            else{
+                small.innerHTML = 'Adresse non valide';
+                small.classList.remove('emailSuccess')
+                small.classList.add('emailFailed')
+            };
+
+
+};
+
+
+
+
+
 
 // if(email == regex){
 //     document.addEventListener(validation)
