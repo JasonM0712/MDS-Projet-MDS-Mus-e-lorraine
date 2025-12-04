@@ -36,13 +36,15 @@ function emailValid(inputEmail) {
 
 };
 
+
+
 // form.formText.addEventListener('change', function(){
 //     textFormulaire(this)
 // })
 
 // function textFormulaire(inputText){
 //     let textRegex = /^[a-zA-Z]/;
-//     let 
+//     let
 // }
 
 
