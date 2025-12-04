@@ -450,6 +450,17 @@ th {
     color: green;
 }
 
+@media(min-width: 1200px){
+    .bloc-footer {
+        margin-top: 0px;
+    }
+    .contactBanner {
+        padding-top: 150px;
+        margin-top: 0px;
+        height: 1000px;
+    }
+}
+
 
 @media(max-width: 800px) {
     .list-bloc-article {
