@@ -216,6 +216,21 @@ th {
     background-size: cover;
 }
 
+.contactBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top: 1px solid #8B1E1E;
+    border-bottom: 1px solid #8B1E1E;
+    height: 800px;
+    background-image: url("BatailleNancy.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .banner {
     display: block;
 }
@@ -364,17 +379,12 @@ th {
 
 .contact-title{
     padding-top: 100px;
-    margin-left: 200px;
-    margin-bottom: 50px ;
     color: #8B1E1E;
 
 }
 
 .bloc-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    display: block;
 }
 /* .sous-bloc-form{
    

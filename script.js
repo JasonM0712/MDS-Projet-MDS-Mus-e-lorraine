@@ -1,43 +1,49 @@
 "use strict";
 
-function openModal(){
+function openModal() {
     document.querySelector('.background-modal').style.display = "block";
     document.querySelector('.modal').classList.add('modal-open')
 }
 
-function closeModal(){
+function closeModal() {
     document.querySelector('.background-modal').style.display = "none";
     document.querySelector('.modal').classList.remove('modal-open')
-
 }
 
 let form = document.querySelector('#contactForm');
 
-form.email.addEventListener('change', function(){
+form.email.addEventListener('change', function () {
     emailValid(this)
 });
 
-function emailValid(inputEmail){
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$/;
-        let testEmail = emailRegex.test(inputEmail.value);
-        let small = inputEmail.nextElementSibling;
-// ^ nextElementSibling sert à attraper la balise qui est juste après
+function emailValid(inputEmail) {
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$/;
+    let testEmail = emailRegex.test(inputEmail.value);
+    let small = inputEmail.nextElementSibling;
+    // ^ nextElementSibling sert à attraper la balise qui est juste après
 
 
-            if(testEmail){
-                small.innerHTML = 'Adresse Valide';
-                small.classList.remove('emailFailed')
-                small.classList.add('emailSuccess')
-            } 
-            else{
-                small.innerHTML = 'Adresse non valide';
-                small.classList.remove('emailSuccess')
-                small.classList.add('emailFailed')
-            };
-
+    if (testEmail) {
+        small.innerHTML = 'Adresse Valide';
+        small.classList.remove('emailFailed')
+        small.classList.add('emailSuccess')
+    }
+    else {
+        small.innerHTML = 'Adresse non valide';
+        small.classList.remove('emailSuccess')
+        small.classList.add('emailFailed')
+    };
 
 };
 
+// form.formText.addEventListener('change', function(){
+//     textFormulaire(this)
+// })
+
+// function textFormulaire(inputText){
+//     let textRegex = /^[a-zA-Z]/;
+//     let 
+// }
 
 
 
@@ -52,11 +58,11 @@ function emailValid(inputEmail){
 
 // Alerte avec variable
 
-// let message; 
+// let message;
 // message ='Jason'
 // alert(message);
 
 
-    
-            
+
+
 
